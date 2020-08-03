@@ -253,3 +253,70 @@ total 32
 [1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              [0m[27m[24m[J[0m[49m[39m[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/git/[1m[38;5;254m[44m[38;5;255mdjango_antd_mixed_demo[0m[38;5;255m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mdjango_antd_mix_site[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[42m[34m[0m[34m[42m[42m[30m  [30m [30mmaster [30m?4[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m [0m[49m[39m[K[131C[0m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m✔[0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[34m[0m[34m[40m[44m[30m django_antd_mixed_demo[0m[30m[44m[44m[30m [0m[30m[44m[44m[30m [0m[30m[44m[49m[39m[162D[?2004h[1m[31me[0m[39m[90mxit[39m[0m[32me[32mx[39m[1m[31me[1m[31mx[1m[31mi[0m[39m[0m[32me[0m[32mx[0m[32mi[32mt[39m[?2004l
 
 Script done on Sat Jul 25 19:38:38 2020
+Script started on Sat Aug  1 17:24:34 2020
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                         [0m[27m[24m[Jezonghu@kaiji django_antd_mixed_demo % [K[?2004hppwp  ppwd[?2004l
+/Users/ezonghu/git/django_antd_mixed_demo
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                         [0m[27m[24m[Jezonghu@kaiji django_antd_mixed_demo % [K[?2004hlls[?2004l
+README.md		django_antd_mix_site	install.log		requirements.txt	venv
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                         [0m[27m[24m[Jezonghu@kaiji django_antd_mixed_demo % [K[?2004hccd django_antd_mix_site[1m/[0m[0m [?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                         [0m[27m[24m[Jezonghu@kaiji django_antd_mix_site % [K[?2004hppython
+[Jpython             python2            python2.7-config   python3-config     python3.6-config   python3.6m-config  python3.7-config   python3.7m-config  pythonw2.7         
+python-config      python2.7          python3            python3.6          python3.6m         python3.7          python3.7m         pythonw            [A[A[0m[27m[24m[37Cpython[K3 manage.py[1m [0m[0m runs
+[J[A[59Cerver[?2004l
+[JWatching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+[31m
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.[0m
+[31mRun 'python manage.py migrate' to apply them.
+[0m
+August 01, 2020 - 14:38:10
+Django version 3.0.8, using settings 'django_antd_mix_site.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[01/Aug/2020 14:38:16] [m"GET /polls/ HTTP/1.1" 200 40[0m
+^C[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                         [0m[27m[24m[Jezonghu@kaiji django_antd_mix_site % [K[?2004hppwp  ppython manage.py migrate[?2004l
+[36;1mOperations to perform:[0m
+[1m  Apply all migrations: [0madmin, auth, contenttypes, sessions
+[36;1mRunning migrations:[0m
+  Applying contenttypes.0001_initial...[32;1m OK[0m
+  Applying auth.0001_initial...[32;1m OK[0m
+  Applying admin.0001_initial...[32;1m OK[0m
+  Applying admin.0002_logentry_remove_auto_add...[32;1m OK[0m
+  Applying admin.0003_logentry_add_action_flag_choices...[32;1m OK[0m
+  Applying contenttypes.0002_remove_content_type_name...[32;1m OK[0m
+  Applying auth.0002_alter_permission_name_max_length...[32;1m OK[0m
+  Applying auth.0003_alter_user_email_max_length...[32;1m OK[0m
+  Applying auth.0004_alter_user_username_opts...[32;1m OK[0m
+  Applying auth.0005_alter_user_last_login_null...[32;1m OK[0m
+  Applying auth.0006_require_contenttypes_0002...[32;1m OK[0m
+  Applying auth.0007_alter_validators_add_error_messages...[32;1m OK[0m
+  Applying auth.0008_alter_user_username_max_length...[32;1m OK[0m
+  Applying auth.0009_alter_user_last_name_max_length...[32;1m OK[0m
+  Applying auth.0010_alter_group_name_max_length...[32;1m OK[0m
+  Applying auth.0011_update_proxy_permissions...[32;1m OK[0m
+  Applying sessions.0001_initial...[32;1m OK[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                         [0m[27m[24m[Jezonghu@kaiji django_antd_mix_site % [K[?2004hppython manage.py makemigrations polls[?2004l
+[36;1mMigrations for 'polls':[0m
+  [1mpolls/migrations/0001_initial.py[0m
+    - Create model Question
+    - Create model Choice
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                         [0m[27m[24m[Jezonghu@kaiji django_antd_mix_site % [K[?2004hppython manage.py sqlmigrate polls 0001[?2004l
+BEGIN;
+--
+-- Create model Question
+--
+CREATE TABLE "polls_question" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "question_text" varchar(200) NOT NULL, "pub_date" datetime NOT NULL);
+--
+-- Create model Choice
+--
+CREATE TABLE "polls_choice" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "choice_text" varchar(200) NOT NULL, "votes" integer NOT NULL, "question_id" integer NOT NULL REFERENCES "polls_question" ("id") DEFERRABLE INITIALLY DEFERRED);
+CREATE INDEX "polls_choice_question_id_c5b4b260" ON "polls_choice" ("question_id");
+COMMIT;
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                         [0m[27m[24m[Jezonghu@kaiji django_antd_mix_site % [K[?2004hppython manage.py migrate[?2004l
+[36;1mOperations to perform:[0m
+[1m  Apply all migrations: [0madmin, auth, contenttypes, polls, sessions
+[36;1mRunning migrations:[0m
+  Applying polls.0001_initial...[32;1m OK[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                         [0m[27m[24m[Jezonghu@kaiji django_antd_mix_site % [K[?2004h
