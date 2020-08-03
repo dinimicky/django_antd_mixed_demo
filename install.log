@@ -329,4 +329,94 @@ db.sqlite3		django_antd_mix_site	manage.py		polls
 [1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                         [0m[27m[24m[Jezonghu@kaiji django_antd_mix_site % [K[?2004htouch polls/templates/polls/index.html¶ [?2004l
 [1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                         [0m[27m[24m[Jezonghu@kaiji django_antd_mix_site % [K[?2004htouch polls/templates/polls/index.html.html .html .html .html .html d.htmle.htmlt.htmla.htmli.htmll.html[?2004l
 [1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                         [0m[27m[24m[Jezonghu@kaiji django_antd_mix_site % [K[?2004htouch polls/templates/polls/detail.html.html .html .html .html .html .html r.htmle.htmls.htmlo.htmlu.html.html .html u.htmll.htmlt.htmls.html[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                         [0m[27m[24m[Jezonghu@kaiji django_antd_mix_site % [K[?2004h
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                         [0m[27m[24m[Jezonghu@kaiji django_antd_mix_site % [K[?2004hppython    p  ppython3 manage.py[1m [0m[0m shell[?2004l
+Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 05:52:31) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> import datetime
+>>> from django.utils import timezone
+>>> from polls.models import Question
+>>> future_question = Question(pub_date=timezone.now() + datetime.timedelta(days=30))
+>>> future_question.was_published_recently()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "/Users/ezonghu/git/django_antd_mixed_demo/django_antd_mix_site/polls/models.py", line 11, in was_published_recently
+    return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
+AttributeError: type object 'datetime.timezone' has no attribute 'now'
+>>> future_question.was_published_recently()[20G = Question(pub_date=timezone.now() + datetime.timedelta(days=30))[6Grom polls.models import Question[K
+>>> from polls.models import Question[6Guture_question.was_published_recently()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "/Users/ezonghu/git/django_antd_mixed_demo/django_antd_mix_site/polls/models.py", line 11, in was_published_recently
+    def was_published_recently(self):
+AttributeError: type object 'datetime.timezone' has no attribute 'now'
+>>> ^D
+now exiting InteractiveConsole...
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                         [0m[27m[24m[Jezonghu@kaiji django_antd_mix_site % [K[?2004hpython3 manage.py shell[?2004l
+Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 05:52:31) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> import datetime
+>>> from django.utils import timezone
+>>> from polls.models import Question
+>>> future_question = Question(pub_date=timezone.now() + datetime.timedelta(days=30))
+>>> future_question.was_published_recently()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "/Users/ezonghu/git/django_antd_mixed_demo/django_antd_mix_site/polls/models.py", line 12, in was_published_recently
+    return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
+AttributeError: type object 'datetime.datetime' has no attribute 'timedelta'
+>>> ^D
+now exiting InteractiveConsole...
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                         
+[0m[27m[24m[Jezonghu@kaiji django_antd_mix_site % [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                         [0m[27m[24m[Jezonghu@kaiji django_antd_mix_site % [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                         [0m[27m[24m[Jezonghu@kaiji django_antd_mix_site % [K[?2004hpython3 manage.py shell[?2004l
+Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 05:52:31) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> import datetime
+>>> from django.utils import timezone
+>>> from polls.models import Question
+>>> future_question = Question(pub_date=timezone.now() + datetime.timedelta(days=30))
+>>> future_question.was_published_recently()
+True
+>>> ^D
+now exiting InteractiveConsole...
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                         [0m[27m[24m[Jezonghu@kaiji django_antd_mix_site % [K[?2004hmmkdir -p polls[1m/[0m[0m/tests.py[23D[6C[5P[18C     [23Dt -p polls/tests.py[18Dto -p polls/tests.py[18Du -p polls/tests.py[18Dc -p polls/tests.py[18Dh -p polls/tests.py[18D[1C[1C[1C[P[15C [16D[P[15C [16D[P[14C [16D[1C polls/tests.py[15D[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                         [0m[27m[24m[Jezonghu@kaiji django_antd_mix_site % [K[?2004hlls[?2004l
+db.sqlite3		django_antd_mix_site	manage.py		polls
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                         [0m[27m[24m[Jezonghu@kaiji django_antd_mix_site % [K[?2004hrrm r  ppython manage.py[1m [0m[17D[7P[9C[0m python est polls[?2004l
+zsh: command not found: manage.py
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                         [0m[27m[24m[Jezonghu@kaiji django_antd_mix_site % [K[?2004hmanage.py pythonest polls[25D                         [25Dppython3 manage.py[1m [0m[0m test polls[?2004l
+Creating test database for alias 'default'...
+System check identified no issues (0 silenced).
+F
+======================================================================
+FAIL: test_was_published_recently_with_future_question (polls.tests.QuestionModelTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ezonghu/git/django_antd_mixed_demo/django_antd_mix_site/polls/tests.py", line 18, in test_was_published_recently_with_future_question
+    self.assertIs(future_question.was_published_recently(), False)
+AssertionError: True is not False
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=1)
+Destroying test database for alias 'default'...
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                         [0m[27m[24m[Jezonghu@kaiji django_antd_mix_site % [K[?2004hpython3 manage.py test polls[?2004l
+Creating test database for alias 'default'...
+System check identified no issues (0 silenced).
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+Destroying test database for alias 'default'...
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                         [0m[27m[24m[Jezonghu@kaiji django_antd_mix_site % [K[?2004heexit[?2004l
+
+Script done on Mon Aug  3 19:46:44 2020
